@@ -1,46 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Commands - Git Practice</title>
     <style>
-        body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; padding: 1rem; }
-        .commands { max-width: 800px; margin: 0 auto; }
-        .commands h1 { text-align: center; }
-        .commands ul { list-style: none; padding: 0; }
-        .commands li { margin: 0.6rem 0; }
-        .cmd { font-family: monospace; background:#f4f4f4; padding:0.15rem 0.35rem; border-radius:4px; }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        padding: 1rem;
+      }
+      .commands {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .commands h1 {
+        text-align: center;
+      }
+      .commands ul {
+        list-style: none;
+        padding: 0;
+      }
+      .commands li {
+        margin: 0.6rem 0;
+      }
+      .cmd {
+        font-family: monospace;
+        background: #f4f4f4;
+        padding: 0.15rem 0.35rem;
+        border-radius: 4px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main class="commands">
-        <h1>Top Git Commands You Must Know</h1>
-        <p>Essential commands for everyday Git workflows (command — short description):</p>
-        <ul>
-            <li><span class="cmd">git init</span> — create a new local repository</li>
-            <li><span class="cmd">git clone &lt;url&gt;</span> — copy a remote repository locally</li>
-            <li><span class="cmd">git status</span> — show current repo status and staged changes</li>
-            <li><span class="cmd">git add &lt;file|.&gt;</span> — stage changes for commit</li>
-            <li><span class="cmd">git commit -m "msg"</span> — commit staged changes with a message</li>
-            <li><span class="cmd">git commit --amend</span> — amend the previous commit</li>
-            <li><span class="cmd">git branch</span> — list, create, or delete branches</li>
-            <li><span class="cmd">git checkout &lt;branch&gt;</span> — switch branches (use <span class="cmd">git switch</span> nowadays)</li>
-            <li><span class="cmd">git switch &lt;branch&gt;</span> — modern command to switch or create branches</li>
-            <li><span class="cmd">git merge &lt;branch&gt;</span> — merge another branch into the current one</li>
-            <li><span class="cmd">git rebase &lt;branch&gt;</span> — reapply commits on top of another base</li>
-            <li><span class="cmd">git fetch</span> — fetch remote changes without merging</li>
-            <li><span class="cmd">git pull</span> — fetch and merge remote changes</li>
-            <li><span class="cmd">git push</span> — upload local commits to the remote</li>
-            <li><span class="cmd">git log</span> — view commit history</li>
-            <li><span class="cmd">git diff</span> — show changes between commits, branches, or working tree</li>
-            <li><span class="cmd">git stash</span> — temporarily save uncommitted changes</li>
-            <li><span class="cmd">git reset --hard &lt;commit&gt;</span> — reset working tree and index to a commit (destructive)</li>
-            <li><span class="cmd">git remote -v</span> — show remote repositories</li>
-            <li><span class="cmd">git tag &lt;name&gt;</span> — create a lightweight or annotated tag</li>
-            <li><span class="cmd">git revert &lt;commit&gt;</span> — create a new commit that undoes a previous commit</li>
-        </ul>
-        <a href="/">Back to Home</a>
+      <h1>Top Git Commands You Must Know</h1>
+      <p>
+        Essential commands for everyday Git workflows (command — short
+        description):
+      </p>
+      <ul>
+        <li>
+          <span class="cmd">git init</span> — create a new local repository
+        </li>
+        <li>
+          <span class="cmd">git clone &lt;url&gt;</span> — copy a remote
+          repository locally
+        </li>
+        <li>
+          <span class="cmd">git status</span> — show current repo status and
+          staged changes
+        </li>
+        <li>
+          <span class="cmd">git add &lt;file|.&gt;</span> — stage changes for
+          commit
+        </li>
+        <li>
+          <span class="cmd">git commit -m "msg"</span> — commit staged changes
+          with a message
+        </li>
+        <li>
+          <span class="cmd">git commit --amend</span> — amend the previous
+          commit
+        </li>
+        <li>
+          <span class="cmd">git branch</span> — list, create, or delete branches
+        </li>
+        <li>
+          <span class="cmd">git checkout &lt;branch&gt;</span> — switch branches
+          (use <span class="cmd">git switch</span> nowadays)
+        </li>
+        <li>
+          <span class="cmd">git switch &lt;branch&gt;</span> — modern command to
+          switch or create branches
+        </li>
+        <li>
+          <span class="cmd">git merge &lt;branch&gt;</span> — merge another
+          branch into the current one
+        </li>
+        <li>
+          <span class="cmd">git rebase &lt;branch&gt;</span> — reapply commits
+          on top of another base
+        </li>
+        <li>
+          <span class="cmd">git fetch</span> — fetch remote changes without
+          merging
+        </li>
+        <li>
+          <span class="cmd">git pull</span> — fetch and merge remote changes
+        </li>
+        <li>
+          <span class="cmd">git push</span> — upload local commits to the remote
+        </li>
+        <li><span class="cmd">git log</span> — view commit history</li>
+        <li>
+          <span class="cmd">git diff</span> — show changes between commits,
+          branches, or working tree
+        </li>
+        <li>
+          <span class="cmd">git stash</span> — temporarily save uncommitted
+          changes
+        </li>
+        <li>
+          <span class="cmd">git reset --hard &lt;commit&gt;</span> — reset
+          working tree and index to a commit (destructive)
+        </li>
+        <li>
+          <span class="cmd">git remote -v</span> — show remote repositories
+        </li>
+        <li>
+          <span class="cmd">git tag &lt;name&gt;</span> — create a lightweight
+          or annotated tag
+        </li>
+        <li>
+          <span class="cmd">git revert &lt;commit&gt;</span> — create a new
+          commit that undoes a previous commit
+        </li>
+      </ul>
+      <a href="/">Back to Home</a>
     </main>
-</body>
+  </body>
 </html>
