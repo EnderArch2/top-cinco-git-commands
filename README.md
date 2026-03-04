@@ -15,7 +15,7 @@
       </td>
       <td width="50%" valign="top">
         <h3>🚀 My Stats</h3>
-        <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dracula&hide_border=true" width="100%"/>
+        <img src="image.jpg" width="100%"/>
       </td>
     </tr>
   </table>
